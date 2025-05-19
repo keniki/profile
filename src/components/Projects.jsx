@@ -9,55 +9,10 @@ const Projects = () => {
     {
       id: 1,
       title: 'E-Commerce Platform',
-      description: 'A full-featured online shopping platform with payment integration, user authentication, and order management.',
+      description: 'Very soon, I am collecting all the neceseray information and making sure I do not betray the confidence of my customers sharing some info here',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       category: 'web',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      link: '#'
-    },
-    {
-      id: 2,
-      title: 'Task Management App',
-      description: 'A productivity application for managing tasks, projects, and deadlines with team collaboration features.',
-      image: 'https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      category: 'web',
-      technologies: ['Vue.js', 'Express', 'PostgreSQL', 'Socket.io'],
-      link: '#'
-    },
-    {
-      id: 3,
-      title: 'Health Tracking Mobile App',
-      description: 'A mobile application for tracking fitness goals, nutrition, and health metrics with data visualization.',
-      image: 'https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      category: 'mobile',
-      technologies: ['React Native', 'Firebase', 'D3.js'],
-      link: '#'
-    },
-    {
-      id: 4,
-      title: 'Real Estate Listing Platform',
-      description: 'A platform for property listings with search filters, virtual tours, and agent contact features.',
-      image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      category: 'web',
-      technologies: ['Next.js', 'GraphQL', 'PostgreSQL', 'AWS S3'],
-      link: '#'
-    },
-    {
-      id: 5,
-      title: 'Weather Forecast App',
-      description: 'A weather forecasting application with location-based services and interactive maps.',
-      image: 'https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      category: 'mobile',
-      technologies: ['Flutter', 'Dart', 'OpenWeatherMap API'],
-      link: '#'
-    },
-    {
-      id: 6,
-      title: 'Financial Dashboard',
-      description: 'An analytics dashboard for financial data visualization and reporting with multiple data sources.',
-      image: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      category: 'data',
-      technologies: ['React', 'D3.js', 'Node.js', 'Redis'],
+      technologies: ['React', 'Kotlin', 'MongoDB', 'Cloud'],
       link: '#'
     }
   ];
