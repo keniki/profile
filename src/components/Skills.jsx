@@ -5,36 +5,36 @@ import { useInView } from 'react-intersection-observer';
 const Skills = () => {
   const skillCategories = [
     {
-      id: 'frontend',
-      title: 'Frontend Development',
-      skills: [
-        { name: 'React', level: 90 },
-        { name: 'JavaScript', level: 95 },
-        { name: 'HTML/CSS', level: 90 },
-        { name: 'TypeScript', level: 85 },
-        { name: 'Vue.js', level: 75 },
-      ]
-    },
-    {
       id: 'backend',
       title: 'Backend Development',
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Python', level: 80 },
-        { name: 'MongoDB', level: 75 },
-        { name: 'PostgreSQL', level: 70 },
-        { name: 'Express', level: 85 },
+        { name: 'Java', level: 95 },
+        { name: 'Spring Boot', level: 90 },
+        { name: 'Kotlin', level: 85 },
+        { name: 'Micronaut', level: 80 },
+        { name: 'Hibernate', level: 85 },
       ]
     },
     {
-      id: 'tools',
-      title: 'Tools & Technologies',
+      id: 'cloud',
+      title: 'Cloud & DevOps',
       skills: [
-        { name: 'Git', level: 90 },
-        { name: 'Docker', level: 75 },
-        { name: 'AWS', level: 70 },
+        { name: 'AWS', level: 85 },
+        { name: 'Kubernetes', level: 80 },
+        { name: 'Docker', level: 85 },
         { name: 'CI/CD', level: 80 },
-        { name: 'Jest', level: 75 },
+        { name: 'Git', level: 90 },
+      ]
+    },
+    {
+      id: 'databases',
+      title: 'Databases',
+      skills: [
+        { name: 'Oracle', level: 90 },
+        { name: 'MySQL', level: 85 },
+        { name: 'MongoDB', level: 80 },
+        { name: 'RDS', level: 85 },
+        { name: 'DynamoDB', level: 75 },
       ]
     }
   ];
@@ -74,10 +74,10 @@ const Skills = () => {
           ref={ref}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-            My <span className="text-blue-600 dark:text-blue-400">Skills</span>
+            Technical <span className="text-blue-600 dark:text-blue-400">Skills</span>
           </h2>
           <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-            A comprehensive overview of my technical expertise and proficiencies in various technologies and development areas.
+            Extensive experience in backend development, cloud technologies, and database management, with certifications in AWS and Scrum.
           </p>
         </motion.div>
 
@@ -132,15 +132,17 @@ const Skills = () => {
           animate={inView ? "visible" : "hidden"}
         >
           <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
-            Other Skills & Interests
+            Certifications & Additional Skills
           </h3>
           
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'UI/UX Design', 'Responsive Design', 'Performance Optimization', 
-              'API Development', 'Agile Methodologies', 'Team Leadership',
-              'Technical Writing', 'Web Accessibility', 'GraphQL',
-              'WebSockets', 'Mobile Development', 'SEO'
+              'AWS Certified Cloud Practitioner', 'Scrum Master Certified',
+              'Data Engineer with AWS', 'Project Management',
+              'Team Leadership', 'Agile Methodologies',
+              'UML Design', 'English B2 Certificate',
+              'JIRA', 'Confluence', 'GitLab',
+              'IntelliJ IDEA'
             ].map((skill) => (
               <span 
                 key={skill}

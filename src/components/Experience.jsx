@@ -6,27 +6,35 @@ const Experience = () => {
   const experienceData = [
     {
       id: 1,
-      title: 'Senior Software Engineer',
-      company: 'TechNova Solutions',
-      duration: '2021 - Present',
-      description: 'Led development of cloud-based SaaS platform. Implemented microservices architecture using Node.js and React. Managed team of 5 developers and mentored junior engineers.',
-      technologies: ['React', 'Node.js', 'Docker', 'AWS', 'MongoDB']
+      title: 'Senior Software Developer / Tech Lead',
+      company: 'Current Position',
+      duration: 'Dec 2021 - Present',
+      description: 'Working on APIs offering ML price recommendations, competitors price behavior, and city engagement. Implementing Spring Batch for static data management. Tech Stack: Java, Spring, Kotlin, AWS (Fargate, DynamoDB, RDS, ECS/ECR), Micronaut, Kubernetes.',
+      technologies: ['Java', 'Spring', 'Kotlin', 'AWS', 'Kubernetes']
     },
     {
       id: 2,
-      title: 'Full Stack Developer',
-      company: 'Digital Dynamics',
-      duration: '2018 - 2021',
-      description: 'Developed responsive web applications for clients in finance and healthcare sectors. Built RESTful APIs and integrated third-party services. Improved application performance by 40%.',
-      technologies: ['JavaScript', 'Python', 'Django', 'PostgreSQL', 'Redux']
+      title: 'Project Manager/Scrum Master',
+      company: 'Astrata',
+      duration: 'Mar 2021 - Jan 2022',
+      description: 'Led scrum ceremonies and improved performance for Big Data analytics and .NET teams. Managed internal projects and core application development.',
+      technologies: ['Scrum', 'Project Management', 'Big Data', '.NET', 'Team Leadership']
     },
     {
       id: 3,
-      title: 'Frontend Developer',
-      company: 'WebSphere Inc.',
-      duration: '2016 - 2018',
-      description: 'Created dynamic user interfaces with modern JavaScript frameworks. Collaborated with UX/UI designers to implement responsive designs. Optimized web performance and accessibility.',
-      technologies: ['HTML/CSS', 'JavaScript', 'Vue.js', 'Sass', 'Webpack']
+      title: 'Project Manager/Scrum Master',
+      company: 'OpenJaw Technologies',
+      duration: 'Dec 2018 - April 2021',
+      description: 'Managed e-Commerce platforms for travel companies and loyalty programmes. Led multicultural teams of 2-15 members using Agile framework. Worked with international clients including British Airways and Air Miles.',
+      technologies: ['Agile', 'e-Commerce', 'Project Management', 'Team Leadership']
+    },
+    {
+      id: 4,
+      title: 'Senior Developer / Tech Lead',
+      company: 'OpenJaw Technologies',
+      duration: 'Sep 2009 - Dec 2018',
+      description: 'Led engineering teams through software life cycles, making technical decisions, estimations, and designs. Served as technical contact and mentor while ensuring delivery met quality metrics.',
+      technologies: ['Java', 'GitLab', 'Oracle DB', 'Team Leadership']
     }
   ];
 
@@ -68,7 +76,7 @@ const Experience = () => {
             Work <span className="text-blue-600 dark:text-blue-400">Experience</span>
           </h2>
           <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-            My professional journey in the tech industry, where I've had the opportunity to work on diverse projects and grow my skill set.
+            Over 15 years of professional experience in software development and project management, working with cutting-edge technologies and leading teams to success.
           </p>
         </motion.div>
 
@@ -79,10 +87,8 @@ const Experience = () => {
           animate={inView ? "visible" : "hidden"}
           ref={ref}
         >
-          {/* Timeline line */}
           <div className="absolute left-4 md:left-1/2 top-0 h-full w-0.5 bg-blue-600 dark:bg-blue-500 transform md:-translate-x-1/2"></div>
 
-          {/* Experience items */}
           {experienceData.map((item, index) => (
             <motion.div 
               key={item.id}
@@ -91,10 +97,8 @@ const Experience = () => {
               }`}
               variants={itemVariants}
             >
-              {/* Timeline dot */}
               <div className="absolute left-4 md:left-1/2 w-8 h-8 bg-blue-600 dark:bg-blue-500 rounded-full border-4 border-white dark:border-gray-800 transform -translate-x-1/2 z-10"></div>
               
-              {/* Content */}
               <div className={`ml-12 md:ml-0 md:w-5/12 ${
                 index % 2 === 0 ? 'md:mr-auto md:pl-12' : 'md:ml-auto md:pr-12'
               }`}>

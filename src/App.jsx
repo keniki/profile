@@ -31,9 +31,11 @@ function App() {
           <Skills />
         </Element>
         
+        {/* Projects section temporarily hidden
         <Element name="projects">
           <Projects />
         </Element>
+        */}
         
         <Element name="contact">
           <Contact />

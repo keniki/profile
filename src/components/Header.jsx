@@ -14,11 +14,10 @@ const Header = () => {
     { name: 'About', to: 'about' },
     { name: 'Experience', to: 'experience' },
     { name: 'Skills', to: 'skills' },
-    { name: 'Projects', to: 'projects' },
+    // { name: 'Projects', to: 'projects' }, // Temporarily hidden
     { name: 'Contact', to: 'contact' }
   ];
 
-  // Check scroll position to change header style
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -51,7 +50,6 @@ const Header = () => {
       variants={headerVariants}
     >
       <div className="container-custom mx-auto flex items-center justify-between">
-        {/* Logo */}
         <Link 
           to="home" 
           spy={true} 
@@ -62,7 +60,6 @@ const Header = () => {
           Alberto<span className="text-gray-900 dark:text-white">.dev</span>
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
             <Link
@@ -79,7 +76,6 @@ const Header = () => {
             </Link>
           ))}
           
-          {/* Theme toggle */}
           <button 
             onClick={toggleTheme}
             className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"
@@ -93,7 +89,6 @@ const Header = () => {
           </button>
         </nav>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
           <button 
             onClick={toggleTheme}
@@ -131,7 +126,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {mobileMenuOpen && (
         <motion.div 
           className="md:hidden bg-white dark:bg-gray-900 shadow-lg"

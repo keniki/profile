@@ -57,7 +57,7 @@ const Hero = () => {
           variants={itemVariants}
         >
           <h2 className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-medium">
-            Software Developer & Technology Enthusiast
+            Senior Software Developer & Project Manager
           </h2>
         </motion.div>
         
@@ -65,8 +65,8 @@ const Hero = () => {
           className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-10 max-w-2xl mx-auto"
           variants={itemVariants}
         >
-          Crafting elegant solutions to complex problems with clean, efficient code.
-          Passionate about creating intuitive user experiences and scalable applications.
+          Experienced software developer and project manager specializing in Java, Spring Boot, and AWS technologies.
+          Leading teams to deliver high-quality solutions with a focus on efficiency and scalability.
         </motion.p>
         
         <motion.div 
@@ -74,14 +74,14 @@ const Hero = () => {
           variants={itemVariants}
         >
           <Link
-            to="projects"
+            to="about"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             className="btn btn-primary"
           >
-            View My Work
+            Learn More
           </Link>
           
           <Link
