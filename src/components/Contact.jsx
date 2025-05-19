@@ -158,7 +158,7 @@ const Contact = () => {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Send Me a Message</h3>
+            <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Send Me a Message via LinkedIn</h3>
             
             {formStatus.submitted ? (
               <div className={`p-4 rounded-lg mb-6 ${formStatus.success ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' : 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'}`}>

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { ArrowDownIcon } from '@heroicons/react/24/outline';
-
+import profileImage from '../../assets/images/1572037329080.jpg'; 
 const Hero = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -39,7 +39,7 @@ const Hero = () => {
         animate="visible"
       >
         <motion.img
-          src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src={profileImage} 
           alt="Alberto Ayu Palacios"
           className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 object-cover border-4 border-white dark:border-gray-800 shadow-xl"
           variants={itemVariants}
