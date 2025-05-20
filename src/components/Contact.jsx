@@ -231,7 +231,7 @@ const Contact = () => {
               
               <button
                 type="submit"
-                className="w-full btn btn-primary"
+                className="w-full btn btn-primary" disabled
               >
                 Send Message
               </button>
